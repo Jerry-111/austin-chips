@@ -1,0 +1,98 @@
+#scene-permit {
+  background: #1e2929;
+}
+#scene-permit canvas,
+.notice-backup,
+.desk-light {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.notice-backup {
+  object-fit: contain;
+  object-position: 65% 30%;
+  padding: 8vh 5vw 6vh;
+}
+.permit-ready .notice-backup { display: none; }
+.desk-light {
+  pointer-events: none;
+  background: linear-gradient(0deg, #071011f5 0%, #0a1316b5 22%, #0a131600 56%),
+              radial-gradient(ellipse at 58% 34%, transparent 37%, #10181238 84%, #0b121765 115%);
+}
+.film-kicker {
+  margin: 0 0 18px;
+  font: 400 clamp(12px, 1.1vw, 16px)/1.4 DM, sans-serif;
+  color: #e6e0d5;
+}
+.overlay.notice-title, .overlay.notice-window, .overlay.notice-reply { bottom: 13.5%; }
+.overlay.notice-title h2 { font-size: clamp(54px, 6.7vw, 108px); }
+.overlay.notice-window h2, .overlay.notice-reply h2 { font-size: clamp(46px, 5.9vw, 94px); }
+.overlay.notice-window .dek, .overlay.notice-reply .dek { margin-top: 13px; }
+.notice-reply .external-link { margin-top: 16px; }
+.overlay.residential h2 { font-size: clamp(48px, 6.1vw, 90px); }
+.scene-chip::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: var(--coda-shade, 0);
+  background: linear-gradient(90deg, #05090ce8, #05090c85 42%, transparent 83%), linear-gradient(0deg, #06090bd9, transparent 75%);
+}
+.overlay.film-end { bottom: 16%; }
+.last-line {
+  margin: 0;
+  max-width: 17.5em;
+  text-wrap: balance;
+  font: 400 clamp(32px, 3.65vw, 66px)/1.16 Space, sans-serif;
+  letter-spacing: -.048em;
+}
+.signature { font: 400 16px/1.5 DM, sans-serif; margin: 19px 0 0; color: #dfd8ce; }
+.film-end .external-link { margin-top: 15px; }
+#replay[hidden], #scroll-cue[hidden] { display: none; }
+@media (max-width: 760px) {
+  .scene-globe::after { background: linear-gradient(0deg, #02070795, transparent 65%); }
+  .film-kicker { margin-bottom: 10px; }
+  .overlay.notice-title, .overlay.notice-window, .overlay.notice-reply { bottom: 16%; }
+  .overlay.notice-title h2 { font-size: 13vw; }
+  .overlay.notice-window h2, .overlay.notice-reply h2 { font-size: 10.8vw; }
+  .overlay.notice-reply .dek { font-size: 15px; }
+  .notice-backup { padding: 9vh 1vw 18vh; }
+  .desk-light { background: linear-gradient(0deg, #071011 3%, #0b1214d9 27%, #161c1d00 64%); }
+  .overlay.film-end { bottom: 15%; }
+  .last-line { font-size: clamp(28px, 7.9vw, 52px); }
+  .signature { font-size: 14px; margin-top: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #play-toggle { visibility: hidden; }
+}
+#film-progress-fill { width: 100%; transform-origin: left center; }
+.desk-light { background: linear-gradient(0deg, #071011fa 0%, #0a1316e8 20%, #10191a3b 43%, transparent 55%), radial-gradient(ellipse at 58% 34%, transparent 38%, #10181226 80%, #0b121759); }
+#edit-shutter { position: absolute; z-index: 12; inset: 0; background: #070a0c; opacity: 0; pointer-events: none; }
+.edge-shade { background: linear-gradient(0deg, #050a0cf2, #050a0c99 4%, transparent 14%, transparent 86%, #050a0c9c 98%, #050a0cc9); }
+
+/* Leave space for the physical chip beside the opening research question. */
+.overlay.intro { top:15%; bottom:auto; max-width:51vw; }
+.overlay.intro h1 { font-size:clamp(50px,min(5.9vw,10.7vh),108px); line-height:1.015; max-width:10.8em; text-wrap:initial; }
+.overlay.intro .dek { max-width:28em; font-size:clamp(16px,1.43vw,23px); line-height:1.45; margin-top:1.2em; text-wrap:pretty; }
+.overlay.intro .dek, .overlay.notice-title { text-shadow:0 1px 4px #07090b, 0 0 15px #07090bc9; }
+.intro-byline { margin:1em 0 0; font:400 clamp(13px,1.1vw,17px)/1.3 DM,sans-serif; color:#e4e2da; }
+.overlay.package .dek,.overlay.die .dek,.overlay.wafer .dek { max-width:27em; text-wrap:pretty; }
+.overlay.growth .dek,.overlay.notice-title .dek { max-width:31em; }
+.overlay.growth .source-caption { margin-top:1em; }
+.overlay.notice-title h2 { font-size:clamp(39px,5.4vw,88px); }
+.overlay.film-end .last-line { max-width:22em; font-size:clamp(27px,3.1vw,52px); }
+@media(max-width:760px) {
+ .overlay.notice-title h2 { font-size:clamp(31px,9.2vw,58px); }
+ .overlay.intro { top:12.5%; bottom:14.5%; max-width:none; display:flex; flex-direction:column; align-items:flex-start; }
+ .overlay.intro h1 { max-width:11em; font-size:clamp(32px,min(10vw,6.8svh),64px); }
+ .overlay.intro .dek { max-width:28em; font-size:clamp(14px,3.8vw,19px); margin-top:auto; }
+ .intro-byline { margin-top:.7em; }
+ .overlay.film-end .last-line { font-size:clamp(24px,6.7vw,42px); }
+ .overlay.package .dek,.overlay.die .dek,.overlay.wafer .dek { max-width:23em; }
+}
+@media(max-height:560px) and (min-aspect-ratio:4/5) {
+ .overlay.intro h1 { font-size:9vh; }
+ .overlay.intro .dek { font-size:clamp(12px,3.1vh,17px); }
+ .overlay.notice-title h2,.overlay.notice-reply h2 { font-size:8vh; }
+}

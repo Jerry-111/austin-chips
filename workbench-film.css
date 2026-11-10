@@ -1,0 +1,57 @@
+.wb-film {
+  position: absolute; inset: 0; overflow: hidden; isolation: isolate;
+  background: #0d1618; color: #f3f0e6; font-family: DM, Arial, sans-serif;
+}
+.wb-film .wb-bench, .wb-site, .wb-canvas, .wb-scrim { position: absolute; inset: 0; width: 100%; height: 100%; }
+.wb-bench { background: #111b1b url('assets/workbench-poster.jpg') 50% 45% / cover no-repeat; }
+.wb-site { object-fit: cover; object-position: 50% 48%; filter: saturate(.56) contrast(1.1); }
+.wb-scrim { pointer-events: none; background: linear-gradient(90deg,rgba(3,11,12,.86) 0%,rgba(3,11,12,.54) 32%,transparent 70%), linear-gradient(0deg,rgba(3,9,10,.86),transparent 48%); }
+.wb-panel { position: absolute; left: 7%; right: 11%; bottom: 16%; margin: 0; }
+.wb-panel [hidden] { display: none; }
+.wb-film p, .wb-film h2, .wb-film blockquote, .wb-film figure { margin: 0; }
+.wb-film .wb-context { color: #e6d8b5; font-size: clamp(.82rem,1.15vw,1.1rem); line-height: 1.45; margin-bottom: 1.15rem; }
+.wb-jobs .wb-figure { font: 400 clamp(4rem,10vw,11rem)/.9 Space,Arial,sans-serif; letter-spacing: -.075em; }
+.wb-jobs h2 { font: 400 clamp(1.45rem,3.25vw,3.6rem)/1.18 Space,Arial,sans-serif; letter-spacing: -.04em; margin-top: .45rem; }
+.wb-number-reel { position: relative; }
+.wb-number-reel > div:nth-child(2) { position: absolute; inset: 0; }
+.wb-breakdown { width: min(75vw, 920px); margin-top: clamp(1.2rem,4.3vh,3rem) !important; position: relative; }
+.wb-rule { display: flex; align-items: stretch; height: clamp(6px,.65vw,10px); width: 100%; }
+.wb-rule i { display: block; height: 100%; transform-origin: left; }
+.wb-direct-line { width: 30.294%; background: #f4ca7b; }
+.wb-supported-line { width: 69.706%; background: #98c6c1; }
+.wb-scale-labels { display: grid; grid-template-columns: 30.294% 69.706%; margin-top: .8rem; }
+.wb-scale-labels p { max-width: 29rem; font-size: clamp(.85rem,1.2vw,1.12rem); line-height: 1.36; }
+.wb-scale-labels p:first-child { padding-right: .7rem; }
+.wb-scale-labels strong { font-weight: 600; display: block; color: #ffdf9e; font-variant-numeric: tabular-nums; }
+.wb-scale-labels p + p strong { color: #b6e1d8; }
+.wb-film .wb-source { display: inline-block; pointer-events: auto; font-size: clamp(.72rem,1vw,.94rem); color: #d1d3c8; margin-top: 1.55rem; line-height: 1.4; }
+.wb-film a { text-underline-offset: .23em; }
+.wb-training, .wb-hiring, .wb-quote { right: auto; width: min(44vw,42rem); }
+.wb-training h2 { font: 400 clamp(3rem,6vw,7rem)/.98 Space,Arial,sans-serif; letter-spacing: -.065em; }
+.wb-hiring strong { font: 400 clamp(3.7rem,8.2vw,9rem)/.88 Space,Arial,sans-serif; letter-spacing: -.07em; color: #f4ce8d; }
+.wb-hiring h2 { font-size: clamp(1.05rem,1.8vw,1.75rem); font-weight: 400; max-width: 27rem; line-height: 1.35; margin-top: 1rem; }
+.wb-quote blockquote { font: 400 clamp(1.75rem,3.7vw,4.5rem)/1.07 Space,Arial,sans-serif; letter-spacing: -.045em; text-wrap: balance; }
+.wb-quote figcaption { font-size: clamp(.82rem,1.1vw,1.09rem); line-height: 1.5; color: #d9d6c8; margin-top: 1.2rem; }
+.wb-training .wb-detail, .wb-quote figcaption span { display:block; max-width:31em; margin:.75em 0 0; font:400 clamp(15px,1.38vw,21px)/1.43 DM,Arial,sans-serif; color:#f0ede5; }
+.wb-quote figcaption { margin:0 0 1.05em; }
+.wb-quote figcaption strong { font:400 clamp(25px,2.5vw,43px)/1.1 Space,Arial,sans-serif; }
+.wb-quote blockquote { font-size:clamp(26px,3vw,53px); }
+.wb-hiring > strong { font-size:clamp(42px,6vw,93px); }
+.wb-training h2 { font-size:clamp(42px,5vw,87px); }
+@media (max-width: 740px), (max-aspect-ratio: 4/5) {
+  .wb-panel { left: 7%; right: 11%; bottom: 15%; }
+  .wb-film .wb-context { margin-bottom: .8rem; font-size: .8rem; }
+  .wb-jobs .wb-figure { font-size: clamp(4rem,17vw,6.5rem); }
+  .wb-jobs h2 { font-size: clamp(1.3rem,6vw,2.1rem); }
+  .wb-breakdown { width: 100%; margin-top: 1.55rem !important; }
+  .wb-scale-labels p { font-size: clamp(.72rem,3.2vw,.91rem); }
+  .wb-scale-labels p + p { max-width: 15rem; }
+  .wb-source { margin-top: 1rem !important; }
+  .wb-training, .wb-hiring, .wb-quote { width: auto; }
+  .wb-quote blockquote { font-size: clamp(1.65rem,7.8vw,3.1rem); }
+  .wb-scrim { background: linear-gradient(0deg,#071011 2%,rgba(7,16,17,.88) 19%,rgba(7,16,17,.5) 38%,transparent 62%); }
+}
+@media (max-height: 520px) and (min-aspect-ratio: 4/5) {
+  .wb-panel { bottom: 15%; }.wb-jobs .wb-figure { font-size: 13vh; }.wb-jobs h2 { font-size: 5vh; }
+  .wb-breakdown { margin-top: 2vh !important; }.wb-film .wb-source { margin-top: 1.5vh; }
+}

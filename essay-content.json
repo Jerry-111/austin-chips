@@ -1,0 +1,173 @@
+{
+  "title": "AI, Chip Factories, and Nearby Communities",
+  "author": "Jerry Chen",
+  "sections": [
+    {
+      "id": "introduction",
+      "title": "Introduction",
+      "paragraphs": [
+        {
+          "index": 3,
+          "text": "Research on chip factories in Austin shows a connection between pollution exposure and asthma-related emergency room visits, while an economic report describes jobs supported by Samsung’s Austin operations (Chambliss et al., 2026; Impact DataSource, 2025). Since I’m building an AI agent startup, I always spend time thinking about what the software can enable people to do and how it makes an impact. I think less about the supply chain behind it, such as those factories producing chips."
+        },
+        {
+          "index": 4,
+          "text": "Therefore, my driving question is: how does semiconductor manufacturing affect the health and economic opportunities of communities in the Austin area? My research suggests that these factories can create valuable job opportunities, while pollution exposure and health risks are indeed unevenly shared across nearby communities. To me, judging their local impact also means looking at who can access these jobs and how residents can influence decisions about pollution."
+        }
+      ],
+      "references": [
+        24,
+        26
+      ]
+    },
+    {
+      "id": "manufacturing",
+      "title": "Manufacturing Background for the Austin Case",
+      "paragraphs": [
+        {
+          "index": 6,
+          "text": "AI’s climate costs include making chips as well as using them in data centers. AI depends on processing computational chips (like GPU or TPU) to run calculations and memory chips to hold the data used in training and running models (Schneider et al., 2025). Kuo et al. (2022) used life cycle assessment to study memory-chip production. They found improvements from 2018 to 2020, but still advocated for more work to cut carbon emissions, especially through better energy use. This memory-chip study helps me understand the manufacturing side of the semiconductor supply chain behind AI. Factories also use fluorinated gases to make patterns on silicon wafers and clean equipment. Some of these gases have a strong warming effect (U.S. Environmental Protection Agency, 2026). This means that cleaner electricity only addresses part of the manufacturing emissions."
+        },
+        {
+          "index": 7,
+          "text": "Ruberti (2024) studied environmental reports from several major chip manufacturers for 2012-2021. The study counted emissions from both the factories and the energy they used, and greenhouse gas emissions per unit of production went down. But production grew. The study also found that the total greenhouse gas emission in the selected companies almost doubled during the same period of time (Ruberti, 2024). This suggests that cleaner production can sometimes still come with higher emission overall when the production is growing rapidly. I need to look at both how chips are made and how many are made. These results come from before the current AI boom. A newer study of Google’s AI hardware (TPUs) estimated that lifetime emissions per unit of computation were about two thirds lower for the newer TPU v6e than for v4i. However, manufacturing emissions per TPU,  including those of the supporting hardwares, increased between these generations (Schneider et al., 2025). More efficient AI hardware can still require more emissions to make."
+        }
+      ],
+      "references": [
+        27,
+        31,
+        32,
+        34
+      ]
+    },
+    {
+      "id": "health",
+      "title": "Health and Unequal Exposure in Austin",
+      "paragraphs": [
+        {
+          "index": 9,
+          "text": "I need to distinguish local health effects from climate effects: local air pollution can harm nearby residents, while greenhouse gases contribute to warming around the world (Chambliss et al., 2026; U.S. Environmental Protection Agency, 2026). Chambliss et al. (2026) studied four chip factories and emergency room visits for asthma in Travis County, Texas. They looked at 217 census tracts, which are small areas used to collect population data. The health data came from 2016–2017. The researchers made a pollution exposure score based on factory-reported emissions and distance. Areas with higher scores also had higher rates of emergency room visits for asthma. In their main model, a one standard deviation increase in the exposure score was associated with a 9.3% higher rate of asthma-related emergency room visits (Chambliss et al., 2026, Table 3). This link does not prove that factory emissions caused an individual’s asthma problems as correlation does not equal causation."
+        },
+        {
+          "index": 10,
+          "text": "These findings make the local health cost of manufacturing more concrete for me. The study also found a higher share of residents without health insurance in near-factory neighborhoods than in other neighborhoods (Chambliss et al., 2026). This makes access to health care another impactful factor of how I think about the risks. I would look into the relationship between factory growth and local health data, including which neighborhoods face more exposure and what resources residents have to advocate for themselves."
+        },
+        {
+          "index": 11,
+          "text": "Areas next to factories had higher shares of Black and Latinx residents than the rest of the county. Chambliss et al. (2026) also discuss Austin’s unfair housing policies, including the 1928 Master Plan, which made racial segregation part of city planning. This makes me think that earlier housing and planning decisions could also shape who lives near factories. For example, the city of Austin explains that the 1928 plan moved community services for Black residents to East Austin (City of Austin, n.d.). This tied access to public services to the location of people’s homes, giving the city a way to push segregation through everyday needs. Mohai and Saha (2015) studied U.S. commercial hazardous-waste facilities placed between 1966 and 1995. They found that facilities were often placed in areas that already had higher shares of people of color and low-income residents. The unequal exposure was not simply caused by people moving in after the facilities opened. This is a different industry, so it does not explain exactly what happened in Austin. Mohai and Saha’s findings make the history of these neighborhoods relevant to how I read the Austin results. For me, environmental justice means that decisions about factory growth should take existing differences in exposure into account."
+        }
+      ],
+      "references": [
+        24,
+        25,
+        29,
+        34
+      ]
+    },
+    {
+      "id": "jobs",
+      "title": "Economic Opportunities for Local People",
+      "paragraphs": [
+        {
+          "index": 13,
+          "text": "Jobs are the other side of this story, and they may be a big benefit. Impact DataSource’s report lists 4,907 direct jobs at Samsung’s Austin campus in 2024. It estimates 16,198 jobs when indirect and induced jobs are included (Impact DataSource, 2025, p. 6). That larger number includes jobs supported through other businesses and spending. It does not mean 16,198 people work inside the factory. The estimates use company-provided information, regional economic multipliers, and other assumptions (Impact DataSource, 2025, pp. 27–28). The report shows why people might support these factories."
+        },
+        {
+          "index": 14,
+          "text": "Ortiz (2022) describes Skillpoint Alliance’s manufacturing training program as one route into these jobs. Employers like Samsung visited the program to meet students, to potentially recruit them. According to Skillpoint Alliance, about 30% of graduates of this program are hired by Samsung on average. So this provides a very concrete way to understand how the factories can actually connect to people and help them with opportunities to enter the industry."
+        },
+        {
+          "index": 15,
+          "text": "In a local news interview, manufacturing trainee Scott Williams said he was struggling with debt and hoping a job in a big technology company would help him largely financially (Ortiz, 2022). He described himself as “treading water, making minimum payments most of the time” (Ortiz, 2022, para. 5). For him, a job in the tech industry represented a possible way to move beyond this life of barely keeping up with debt. This helps explain why the economic promises of these factories can actually matter personally to people looking for more stable income. "
+        }
+      ],
+      "references": [
+        26,
+        30
+      ]
+    },
+    {
+      "id": "participation",
+      "title": "Residents and Factory Decisions",
+      "paragraphs": [
+        {
+          "index": 17,
+          "text": "I also want to know how affected residents can be heard in factory decisions. In 2025, TCEQ opened a public comment period for minor revisions to Samsung’s air operating permit in Austin. The notice said comments about the “accuracy, completeness, and appropriateness of the revised permit conditions” could lead to changes in the draft permit. Written comments had to be received within 30 days of the announcement. People who commented would also receive a notice with responses to comments and any potential permit changes (Texas Commission on Environmental Quality, 2025)."
+        },
+        {
+          "index": 18,
+          "text": "Our class reading, Meadows’s Leverage Points: Places to Intervene in a System, helps me think about where change could happen. Meadows (n.d.) explains that changing who gets information or changing the rules can have a much deeper impact than tuning numbers."
+        },
+        {
+          "index": 19,
+          "text": "In this example, the public permit documents create a complete information flow with rules for participation. For me, the response to comments is an important part of the process because it makes the agency explain how it considers what people advocate. Looking at these responses and aunty permit changes would help show whether residents’ input affected the decision (Meadows, n.d.; Texas Commission on Environmental Quality, 2025). This means fairness is also about whether the people facing the risks have a say in handling those risks."
+        }
+      ],
+      "references": [
+        28,
+        33
+      ]
+    },
+    {
+      "id": "conclusion",
+      "title": "What Austin Helps Us Understand",
+      "paragraphs": [
+        {
+          "index": 21,
+          "text": "The Austin case shows me that chip manufacturing can indeed create economic opportunities while also raising concerns about unequally exposed health issues. The job report, training program, and William’s hopes explain why these factories matter to people looking for better income and financial security. The health study shows why nearby neighborhoods also need attention, why the industry grows and brings positive impacts to local people. My answer to the driving question is that the local impact depends on access to jobs, protection from pollutants, and a meaningful role for residents in decisions. For me, this connects AI back to people and places behind the software I use and build."
+        }
+      ],
+      "references": [
+        24,
+        26,
+        30
+      ]
+    }
+  ],
+  "references": [
+    {
+      "index": 24,
+      "text": "Chambliss, S., Warner, A., Zigler, C., Hall, E. M., Cubbin, C., Mueller, E. J., Peng, R. D., & Matsui, E. C. (2026). Health disparities and industrial emissions: A case study of semiconductor manufacturing and asthma morbidity in Austin, Texas. Population and Environment, 48, Article 7. https://doi.org/10.1007/s11111-026-00524-y"
+    },
+    {
+      "index": 25,
+      "text": "City of Austin. (n.d.). About the Equity Division. https://www.austintexas.gov/equity-inclusion/about-equity-division"
+    },
+    {
+      "index": 26,
+      "text": "Impact DataSource. (2025). A report of the economic and fiscal impact during 2024 of Samsung Austin Semiconductor, LLC on the Central Texas area (Austin and Taylor). Samsung Austin Semiconductor. https://download.semiconductor.samsung.com/resources/others/Samsung_Austin_Semiconductor_2024_Economic_Impact_Report_10149411000944.pdf"
+    },
+    {
+      "index": 27,
+      "text": "Kuo, T.-C., Kuo, C.-Y., & Chen, L.-W. (2022). Assessing environmental impacts of nanoscale semi-conductor manufacturing from the life cycle assessment perspective. Resources, Conservation and Recycling, 182, Article 106289. https://doi.org/10.1016/j.resconrec.2022.106289"
+    },
+    {
+      "index": 28,
+      "text": "Meadows, D. (n.d.). Leverage points: Places to intervene in a system. The Donella Meadows Project. https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
+    },
+    {
+      "index": 29,
+      "text": "Mohai, P., & Saha, R. (2015). Which came first, people or pollution? Assessing the disparate siting and post-siting demographic change hypotheses of environmental injustice. Environmental Research Letters, 10(11), Article 115008. https://doi.org/10.1088/1748-9326/10/11/115008"
+    },
+    {
+      "index": 30,
+      "text": "Ortiz, M. (2022, July 28). Workforce organizations help fill key roles for Samsung semiconductor in Austin, Taylor. Spectrum News 1. https://spectrumlocalnews.com/tx/south-texas-el-paso/news/2022/07/28/workforce-organizations-helping-fill-key-roles-for-samsung-semiconductor-in-austin-and-taylor"
+    },
+    {
+      "index": 31,
+      "text": "Ruberti, M. (2024). Environmental performance and trends of the world’s semiconductor foundry industry. Journal of Industrial Ecology, 28(5), 1183–1197. https://doi.org/10.1111/jiec.13529"
+    },
+    {
+      "index": 32,
+      "text": "Schneider, I., Xu, H., Benecke, S., Patterson, D., Huang, K., Ranganathan, P., & Elsworth, C. (2025). An introduction to life-cycle emissions of artificial intelligence hardware. IEEE Micro, 45(5), 9–19. https://doi.org/10.1109/MM.2025.3592568"
+    },
+    {
+      "index": 33,
+      "text": "Texas Commission on Environmental Quality. (2025, April 25). Draft federal operating permit minor revision approval and notification of public announcement: Permit O4088. https://records.tceq.texas.gov/cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&Rendition=Web&dID=8813411"
+    },
+    {
+      "index": 34,
+      "text": "U.S. Environmental Protection Agency. (2026, February 26). Semiconductor industry. https://www.epa.gov/eps-partnership/semiconductor-industry"
+    }
+  ]
+}
